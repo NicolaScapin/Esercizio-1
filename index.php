@@ -1,5 +1,5 @@
 <?php 
-  $vedi_lista=$_GET['lista'];
+  $vedi_lista = (isset($_GET['lista'])) ? $_GET['lista'] : 'no';
 ?>
 <!doctype html>
 <html lang="en">
@@ -21,7 +21,7 @@
 
     <ul>
     <?php
-    $a=['arancia', 'carota', 'fragola', 'limone', 'anguria',];
+    $a=['arancia', 'carota', 'limone', 'fragola', 'anguria',];
 
     foreach ($a as $nome)
 
